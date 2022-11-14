@@ -1,22 +1,9 @@
-// Dopo inseriti i 5 numeri bisogna dire quanti e quali numeri sono stati indovinati.
-
 const arrayRandom = getArrayRandom();
-
-let trovato = 0;
-
-
 const textEl = document.querySelector(".row :nth-child(2)")
-
-
-console.log(arrayRandom);
-
-
-
-generateArrayEl(textEl, arrayRandom);
-
-
+let trovato = 0;
 let arrayInput = [];
 
+generateArrayEl(textEl, arrayRandom);
 
 setTimeout(() => {
 
@@ -28,10 +15,13 @@ setTimeout(() => {
 
     if (trovato === 1) {
         alert(`Hai trovato la bellezza di 1 numero`)
+        alert(`Numero trovato  : ${arrayInput}`)
 
     } else if (trovato > 1) {
 
         alert(`Hai trovato la bellezza di ${trovato} numeri`)
+        alert(`I numeri trovati sono : ${arrayInput}`)
+
 
     } else if (trovato == 0) {
 

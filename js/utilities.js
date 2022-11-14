@@ -55,16 +55,19 @@ function getNumber(input, arrayNum) {
 
             if (numInput == arrayNum[j]) {
 
-                trovato++;
+                if(!input.includes(numInput)){
+                    
+                    trovato++;
+    
+                    input.push(numInput);
+
+                }
 
             }
         }
 
-        input.push(numInput);
-
         i++;
     }
 
-    return input;
-
 }
+
