@@ -35,7 +35,7 @@ function generateArrayEl(arrayEl, arrayNum) {
 
             spanEl.innerHTML = "";
 
-        }, 10000);
+        }, 30000);
 
     }
 
