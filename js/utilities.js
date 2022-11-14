@@ -27,6 +27,8 @@ function generateArrayEl(arrayEl, arrayNum) {
 
         const spanEl = document.createElement("span");
 
+        spanEl.classList.add("fs-5")
+
         spanEl.innerHTML = ` ${arrayNum[i]} `;
 
         arrayEl.append(spanEl)
